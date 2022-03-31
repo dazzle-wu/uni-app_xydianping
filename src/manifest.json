@@ -54,11 +54,23 @@
 
 	},
 	"mp-weixin": { /* 微信小程序特有相关 */
-		"appid": "",
+		"appid": "wx1269f7c17c19caa9",
+		"cloudfunctionRoot": "cloud/",
 		"setting": {
 			"urlCheck": false
 		},
-		"usingComponents": true
+		"usingComponents": true,
+		"plugins": {
+			"routePlan": {
+				"version": "1.0.17",
+				"provider": "wx50b5593e81dd937a"
+			}
+		},
+		"permission": {
+			"scope.userLocation": {
+				"desc": "你的位置信息将用于小程序定位"
+			}
+		}
 	},
 	"mp-alipay" : {
         "usingComponents" : true

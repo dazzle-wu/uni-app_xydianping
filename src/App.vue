@@ -1,17 +1,14 @@
 <script>
 	export default {
 		onLaunch: function() {
-			console.log('App Launch')
-		},
-		onShow: function() {
-			console.log('App Show')
-		},
-		onHide: function() {
-			console.log('App Hide')
+			wx.cloud.init({
+				env: 'cloud1-8gd2c61l7547c872',
+				traceUser: true
+			})
 		}
 	}
 </script>
 
 <style>
-	/*每个页面公共css */
+	@import './styles/base.wxss'
 </style>
